@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Form</title>
+
+    <style>
+        input[type=text]{
+            width: 100%;
+            padding:20px 10px;
+            font-size: 1rem;
+            margin: 20px 0;
+            box-sizing: border-box;
+
+            border: 2px solid red;
+            border-radius: 1000px;
+        }
+
+        #search{
+          
+          border-radius: 2px solid black;
+          font-size:1.4rem;
+          background-image: url(image/search.png);
+          background-repeat: no-repeat;
+          padding: 20px 70px;
+          background-position: 9px;
+          width: 200px;
+          transition: width 0.5s ease-out;
+          
+        }
+
+        #search:focus{
+            width: 100%;
+            background-color: cornflowerblue;
+            color: whitesmoke;
+        }
+
+        #fst{
+            color:green;
+            padding-left: 30px;
+            font-size: 1.3rem;
+            letter-spacing: 1px;
+        }
+
+        #fst:hover{
+            color: red;
+        }
+        #fname{
+            text-align: center;
+            transition: 1s;
+            width: 50%;
+            
+        }
+
+        #fname:hover{
+            width: 100%;
+            background-color: deeppink;
+
+        }
+
+        #lname{
+            padding-left: 30px;
+            font-size: 1.4rem;
+            color: green;
+            text-align: center;
+            width: 50%;
+        }
+        #lname:hover{
+            color: red;
+            font-size: 2rem;
+            transition: 0.6s;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <form action="">
+
+        <input type="text" id="search" name="search" placeholder="search">
+
+            <br>
+
+            <div class="frist-name">
+        <label for="fname" id="fst" >Frist Name</label> <br>
+        <input type="text" id="fname" name="fname" placeholder="Type Your Name ">
+    </div>
+
+    
+
+    <div class="last-name">
+   
+        <label for="fname" id="lname">Last Name</label><br>
+        <input type="text" id="lname" name="lname" placeholder="Type Your Name">
+             
+    </div>
+
+
+    </form>
+
+
+
+</body>
+</html>
